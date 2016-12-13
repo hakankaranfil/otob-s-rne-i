@@ -16,10 +16,16 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+        public string isimsoyisim;
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            
+        }
 
         private void kaydetbtn_Click(object sender, EventArgs e)
         {
-            string isimsoyisim = textBox1.Text;
+            isimsoyisim = textBox1.Text;
             listBox1.Items.Add(textBox1.Text);
         }
     }
