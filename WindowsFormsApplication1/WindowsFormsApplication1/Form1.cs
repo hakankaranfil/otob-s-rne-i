@@ -17,7 +17,9 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
         int sayac = 1;
-        bool devam = true;
+        
+        
+        
 
         Random rsg = new Random();
         private void Form1_Load(object sender, EventArgs e)
@@ -28,7 +30,7 @@ namespace WindowsFormsApplication1
                 {
                     if ((j != 2 || i == 11) && (i!=5|| j<2))
                     {
-
+                        
                         Button btn = new Button();
                         btn.Width = 30;
                         btn.Height = 30;
@@ -37,6 +39,8 @@ namespace WindowsFormsApplication1
 
                         btn.Text = sayac.ToString();
                         btn.Click += Buttonclick;
+                        btn.BackColor = Color.Blue;
+                        
 
 
                         this.Controls.Add(btn);
@@ -49,20 +53,22 @@ namespace WindowsFormsApplication1
 
         public void Buttonclick(object sender, EventArgs e)
         {
-            Button sec = sender as Button;
-            
-            sec.BackColor = Color.Blue;
-            Form2 frm = new Form2();
-            frm.Show();
           
+          Button  sec = sender as Button;
+
+            sec.BackColor = Color.Red;
+            sec.Enabled = false;
+            Form2 frm = new Form2();
+frm.Show();
+          
+            
+            
+          
+         
             }
+        
         }
-
-            //private Color renkolustur()
-            //{
-
-
-            //}
+    
         }
         
 
