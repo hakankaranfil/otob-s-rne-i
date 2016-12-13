@@ -25,6 +25,7 @@ namespace WindowsFormsApplication1
            
         isimsoyisim = textBox1.Text;
             listBox1.Items.Add(isimsoyisim);
+            MessageBox.Show("biletiniz kesilmiştir.teşekkür ederiz");
             this.Hide();
             
            
