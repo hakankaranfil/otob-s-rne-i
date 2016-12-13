@@ -21,9 +21,10 @@ namespace WindowsFormsApplication1
         
         
 
-        Random rsg = new Random();
+      
         private void Form1_Load(object sender, EventArgs e)
         {
+
             for (int i = 0; i < 12; i++)
             {
                 for (int j = 0; j < 5; j++)

@@ -74,6 +74,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Aqua;
             this.ClientSize = new System.Drawing.Size(600, 393);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.kaydetbtn);
@@ -81,7 +82,6 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form2";
             this.Text = "Form2";
-           
             this.ResumeLayout(false);
             this.PerformLayout();
 
